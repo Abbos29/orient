@@ -10,4 +10,8 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media (max-width: 768px) {
+        padding: 0 40px;
+    }
 }

@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import './Reset.scss'
 import './App.scss'
 import About from './components/About/About'
+import Portfolio from './components/Portfolio/Portfolio'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <>
       <Header />
       <About />
+      <Portfolio />
 
     </>
   )

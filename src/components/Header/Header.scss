@@ -1,0 +1,77 @@
+.header {
+    padding: 30px 0;
+
+    background-image: url(/public/header-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    @media (max-width: 992px) {
+        height: 100%;
+    }
+    /* .header__nav */
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    /* .header__menu */
+    &__menu {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        // gap: clamp(1.25rem, 0.682rem + 2.42vw, 2.5rem);
+
+        a {
+            color: rgb(201, 201, 201);
+            font-family: Jost;
+            font-size: 16px;
+
+            // font-size: clamp(0.5rem, 0.273rem + 0.97vw, 1rem);
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0%;
+
+            transition: color .3s;
+
+            &:hover {
+                color: rgb(197, 163, 118);
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 300px;
+
+       
+        // max-width: clamp(9.375rem, 5.114rem + 18.18vw, 18.75rem);
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+
+    max-width: 32px;
+    // max-width: clamp(1.25rem, 0.909rem + 1.45vw, 2rem);
+
+    img {
+        width: 100%;
+    }
+}

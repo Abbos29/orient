@@ -3,6 +3,13 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.1;
+    background: #131313;
+    color: #dcdcdc;
+
+}
+
+section {
+    margin: 100px 0;
 }
 
 .container {
@@ -14,4 +21,23 @@ body {
     @media (max-width: 768px) {
         padding: 0 40px;
     }
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 6%;
+
+    @media (max-width: 480px) {
+        font-size: 22px;
+    }
+}
+.section-text {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 6%;
 }

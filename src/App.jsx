@@ -1,7 +1,10 @@
 import React from 'react'
+
+import Header from './components/Header/Header'
+
+
 import './Reset.scss'
 import './App.scss'
-import Header from './components/Header/Header'
 
 
 const App = () => {

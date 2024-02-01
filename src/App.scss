@@ -5,7 +5,6 @@ body {
     line-height: 1.1;
     background: #131313;
     color: #dcdcdc;
-
 }
 
 section {
@@ -40,4 +39,27 @@ section {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 6%;
+}
+
+.btn {
+    color: #c5a376;
+    font-size: 20px;
+    letter-spacing: 6%;
+    text-align: center;
+    font-family: "Jost";
+
+    padding: 10px 50px;
+    display: block;
+    
+
+    border: 2px solid #c5a376;
+
+    background: transparent;
+
+    transition: all .3s;
+
+    &:hover {
+        background: #c5a376;
+        color: #fff;
+    }
 }

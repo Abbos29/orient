@@ -1,0 +1,28 @@
+.blank {
+
+    background-image: url(/public/blank-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 150px 0;
+
+    height: 100vh;
+
+    @media (max-width: 1200px) {
+        height: auto;
+    }
+    
+    &__box {
+        
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+
+    background-image: url(/public/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 160px 0 40px;
+    /* .footer__logo */
+    &__logo {
+        max-width: 340px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    /* .footer__menu */
+    &__menu {
+
+        max-width: 650px;
+        width: 100%;
+        margin: 100px auto 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+
+        a {
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+
+            color: #fff;
+            transition: all .3s;
+
+            &:hover {
+                color: #C5A376;
+            }
+        }
+    }
+}

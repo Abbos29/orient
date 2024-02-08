@@ -1,11 +1,13 @@
 import React from 'react'
 import './Benefits.scss'
+import { Fade } from 'react-reveal'
 
 const Benefits = () => {
     return (
         <section className="benefits">
             <div className="container">
 
+            <Fade top>
                 <div className="benefits__wrapper">
                     <div className="benefits__item">
                         <svg width="81" height="78" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,6 +67,8 @@ const Benefits = () => {
                         <b>Счастливых клиентов</b>
                     </div>
                 </div>
+
+            </Fade>
 
             </div>
         </section>

@@ -1,29 +1,41 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Header.scss'
+import { Fade, Rotate } from 'react-reveal'
+
 
 const Header = () => {
-  return (
-    <header className="header">
-        <div className="container">
-            <nav className="header__nav">
-                <div className="header__menu">
-                    <a href="">Компания</a>
-                    <a href="">Услуги</a>
-                    <a href="">Проекты</a>
-                    <a href="">Контакты</a>
-                </div>
 
-                <div className="burger">
-                    <img src="./burger.svg" alt="burger" />
-                </div>
-            </nav>
+    return (
+        <header className="header">
+            <div className="container">
+                <Fade top>
+                    <nav className="header__nav">
 
-            <div className="header__logo">
-                <img src="./logo-main.svg" alt="logo" />
+
+                        <div className="header__menu">
+                            <a href="">Компания</a>
+                            <a href="">Услуги</a>
+                            {/* <a href="">Проекты</a> */}
+                            <a href="">Контакты</a>
+                        </div>
+
+
+                        <div className="burger">
+                            <img src="./burger.svg" alt="burger" />
+                        </div>
+                    </nav>
+                </Fade>
+
+                <Fade>
+
+                    <div className="header__logo">
+                        <img src="./logo-main.svg" alt="logo" />
+                    </div>
+
+                </Fade>
             </div>
-        </div>
-    </header>
-  )
+        </header>
+    )
 }
 
 export default Header

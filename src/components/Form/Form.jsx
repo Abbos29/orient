@@ -1,11 +1,17 @@
 import React from 'react'
 import './Form.scss'
+import { Fade } from 'react-reveal'
 
 const Form = () => {
     return (
         <section className="form">
             <div className="container">
+            <Fade top>
+
                 <h2 className="form__title section-title">Форма обслуживания</h2>
+            </Fade>
+
+            <Fade top>
 
                 <form action="">
 
@@ -46,6 +52,7 @@ const Form = () => {
 
 
                 </form>
+            </Fade>
             </div>
         </section>
     )

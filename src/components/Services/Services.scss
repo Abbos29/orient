@@ -1,4 +1,5 @@
 .services {
+    overflow-y: hidden;
     /* .services__inner */
     .about__inner {
         padding-bottom: 30px;
@@ -36,11 +37,17 @@
     &__wrapper {
         display: flex;
         gap: 15px;
+        align-items: center;
+        
+        width: 1600px;
+        min-width: 1600px;
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
     /* .services__item */
     &__item {
         // width: 440px;
-        width: clamp(8.125rem, -4.792rem + 43.06vw, 27.5rem);
+        min-width: clamp(8.125rem, -4.792rem + 43.06vw, 27.5rem);
         // height: 580px;
         height: clamp(16.875rem, 1.958rem + 43.06vw, 36.25rem);
         img {
@@ -50,7 +57,25 @@
         }
     }
 
+    &__desc {
+        // font-size: 24px;
+        font-size: clamp(0.875rem, 0.574rem + 1.23vw, 1.5rem);
+        line-height: 1.2;
+
+        max-width: 800px;
+
+        @media (max-width: 480px) {
+            line-height: 1.1;
+        }
+    }
+
     .wrap-1 {
+
+        width: 1000px;
+        min-width: 1000px;
+        .services__desc {
+            max-width: 580px;
+        }
         
     }
     .wrap-2 {
@@ -58,7 +83,7 @@
 
         div:first-child {
             // width: 700px;
-            width: clamp(20rem, 3rem + 48vw, 43.75rem);
+            min-width: clamp(20rem, 3rem + 48vw, 35.75rem);
 
     
         }
@@ -73,5 +98,9 @@
     }
     .wrap-4 {
         justify-content: flex-end;
+        text-align: right;
+
+        width: 800px;
+        min-width: 800px;
     }
 }

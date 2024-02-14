@@ -79,7 +79,7 @@ const Contacts = () => {
               </defs>
             </svg>
 
-            <p>Почта: Info@orientmediadevelopment.uz</p>
+            <p>Почта: info@orientmedia-development.uz</p>
             {/* <p>Почта: Info@orientmediadevelopment.uz</p> */}
 
           </div>

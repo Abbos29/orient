@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 
 const Contacts = () => {
   return (
-    <section className="contacts">
+    <section className="contacts" id='contacts'>
       <div className="container">
       <Fade top>
         <h2 className="section-title">НАШИ КОНТАКТЫ</h2>

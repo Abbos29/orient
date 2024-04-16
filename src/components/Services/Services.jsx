@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 
 const Services = () => {
     return (
-        <section className="services">
+        <section className="services" id='services'>
 
             <Fade top>
 
